@@ -20,13 +20,15 @@
 // setInterval(function () { 
 //     console.log('second passed'); 
 // }, 1000); 
+require('colors'); 
 
 var count = 0; 
 var intervalObject = setInterval(function () { 
         count++; 
-        console.log(count, 'seconds passed'); 
-        if (count == 10) { 
+        console.log(count, 'seconds passed!'); 
+        if (count == 3) { 
             console.log('exiting'); 
             clearInterval(intervalObject); 
         } 
     }, 3000); 
+   
